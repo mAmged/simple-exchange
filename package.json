@@ -34,7 +34,9 @@
         "prettier": "prettier --write './src/**/*.{ts,js,json}'"
     },
     "dependencies": {
-        "dotenv": "16.0.3"
+        "dotenv": "16.0.3",
+        "grenache-nodejs-http": "^0.7.12",
+        "grenache-nodejs-link": "^0.7.12"
     },
     "devDependencies": {
         "@types/jest": "29.2.3",
