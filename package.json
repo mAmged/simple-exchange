@@ -1,0 +1,55 @@
+{
+    "name": "simple-exchange",
+    "version": "1.0.0",
+    "author": "mamged",
+    "license": "MIT",
+    "main": "./build/index.js",
+    "description": "Simple exchange",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mAmged/simple-exchange.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mAmged/simple-exchange/issues"
+    },
+    "homepage": "https://github.com/mAmged/simple-exchange#readme",
+    "files": [
+        "build"
+    ],
+    "keywords": [
+        "boilerplate",
+        "typescript",
+        "node"
+    ],
+    "scripts": {
+        "start": "node build/index.js",
+        "dev": "nodemon",
+        "develop": "ts-node ./src/index.ts",
+        "test": "DOTENV_CONFIG_PATH=.env.test jest",
+        "test:watch": "DOTENV_CONFIG_PATH=.env.test jest --watch",
+        "clean": "rimraf build",
+        "build": "tsc -p tsconfig.build.json",
+        "build:watch": "tsc -w -p tsconfig.build.json",
+        "lint": "eslint ./src --ext .ts",
+        "prettier": "prettier --write './src/**/*.{ts,js,json}'"
+    },
+    "dependencies": {
+        "dotenv": "16.0.3"
+    },
+    "devDependencies": {
+        "@types/jest": "29.2.3",
+        "@types/node": "18.11.9",
+        "@typescript-eslint/eslint-plugin": "5.44.0",
+        "@typescript-eslint/parser": "5.44.0",
+        "eslint": "8.28.0",
+        "eslint-config-prettier": "8.5.0",
+        "eslint-plugin-jest": "27.1.6",
+        "jest": "29.3.1",
+        "nodemon": "2.0.20",
+        "prettier": "2.8.0",
+        "rimraf": "3.0.2",
+        "ts-jest": "29.0.3",
+        "ts-node": "10.9.1",
+        "typescript": "4.9.3"
+    }
+}
